@@ -33,17 +33,17 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="IP" elementType="Argument">
             <stringProp name="Argument.name">IP</stringProp>
-            <stringProp name="Argument.value">10.74.2.32</stringProp>
+            <stringProp name="Argument.value">dev.cifm.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="PORT" elementType="Argument">
             <stringProp name="Argument.name">PORT</stringProp>
-            <stringProp name="Argument.value">8080</stringProp>
+            <stringProp name="Argument.value"></stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="PROTOCAL" elementType="Argument">
             <stringProp name="Argument.name">PROTOCAL</stringProp>
-            <stringProp name="Argument.value">http</stringProp>
+            <stringProp name="Argument.value">https</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="RampUp" elementType="Argument">
@@ -88,7 +88,7 @@
                 <elementProp name="" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.value">{&#xd;
-    &quot;loginAcct&quot;:&quot;18616715996&quot;,&#xd;
+    &quot;loginAcct&quot;:&quot;15615655764&quot;,&#xd;
     &quot;password&quot;:&quot;Aa112233&quot;,&#xd;
     &quot;pictureCaptcha&quot;: &quot;&quot;,&#xd;
     &quot;channelCode&quot;:&quot;APP&quot;&#xd;
@@ -101,7 +101,7 @@
             <stringProp name="HTTPSampler.port">${PORT}</stringProp>
             <stringProp name="HTTPSampler.protocol">${PROTOCAL}</stringProp>
             <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-            <stringProp name="HTTPSampler.path">/test/mall-fundtrade-server/account/login</stringProp>
+            <stringProp name="HTTPSampler.path">/app/mall-fundtrade-server/account/login</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -141,7 +141,7 @@
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="queryFundDetail " enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="queryFundDetail " enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -168,8 +168,8 @@
                 <stringProp name="Argument.value">{&#xd;
   &quot;isQueryChooseState&quot;: &quot;1&quot;,&#xd;
   &quot;is_query_risk_data_info&quot;: &quot;1&quot;,&#xd;
-  &quot;user_id&quot;: &quot;2207116654378786679775288&quot;,&#xd;
-  &quot;product_id&quot;: &quot;2209146851475213792141322&quot;&#xd;
+  &quot;user_id&quot;: &quot;2506131550921349345526467&quot;,&#xd;
+  &quot;product_id&quot;: &quot;2312068022624422196482684&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -179,7 +179,7 @@
           <stringProp name="HTTPSampler.port">${PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${PROTOCAL}</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/test/mall-data-server/fundinfo/queryFundDetail</stringProp>
+          <stringProp name="HTTPSampler.path">/app/mall-data-server/fundinfo/queryFundDetail</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -206,7 +206,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">${__P(threadCount,100)}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${RampUp}</stringProp>
@@ -228,9 +228,9 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
   &quot;fundCode&quot;: &quot;019683&quot;,&#xd;
-  &quot;tradeAccount&quot;: &quot;590790&quot;,&#xd;
+  &quot;tradeAccount&quot;: &quot;00999000000077582&quot;,&#xd;
   &quot;tradePassword&quot;: &quot;112233&quot;,&#xd;
-  &quot;amount&quot;: &quot;100&quot;,&#xd;
+  &quot;amount&quot;: &quot;10&quot;,&#xd;
   &quot;moneyBuy&quot;: &quot;0&quot;&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
@@ -241,7 +241,7 @@
           <stringProp name="HTTPSampler.port">${PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${PROTOCAL}</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/test/mall-fundtrade-server/trade/purchaseEntrust</stringProp>
+          <stringProp name="HTTPSampler.path">/app/mall-fundtrade-server/trade/purchaseEntrust</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -268,7 +268,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">${__P(threadCount,20)}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${RampUp}</stringProp>
@@ -289,11 +289,12 @@
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
-  &quot;fundCode&quot;: &quot;377240&quot;,&#xd;
-  &quot;tradeAccount&quot;: &quot;540852&quot;,&#xd;
+  &quot;fundCode&quot;: &quot;000857&quot;,&#xd;
+  &quot;tradeAccount&quot;: &quot;00999000000077582&quot;,&#xd;
   &quot;tradePassword&quot;: &quot;112233&quot;,&#xd;
-  &quot;share&quot;: &quot;1&quot;,&#xd;
-  &quot;redeemToMoney&quot;: 1&#xd;
+  &quot;share&quot;: &quot;10&quot;,&#xd;
+  &quot;quickRedeem&quot;: 1,&#xd;
+  &quot;redeemToMoney&quot;: 0&#xd;
 }</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
@@ -303,7 +304,7 @@
           <stringProp name="HTTPSampler.port">${PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${PROTOCAL}</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/test/mall-fundtrade-server/trade/redeemEntrust</stringProp>
+          <stringProp name="HTTPSampler.path">/app/mall-fundtrade-server/trade/redeemEntrust</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -326,11 +327,11 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="queryMyAssetsInfo" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="queryMyAssetsInfo" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">${__P(threadCount,100)}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${RampUp}</stringProp>
@@ -361,7 +362,7 @@
           <stringProp name="HTTPSampler.port">${PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${PROTOCAL}</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/test/mall-fundtrade-server/account/queryMyAssetsInfo</stringProp>
+          <stringProp name="HTTPSampler.path">/app/mall-fundtrade-server/account/queryMyAssetsInfo</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -419,7 +420,7 @@
           <stringProp name="HTTPSampler.port">${PORT}</stringProp>
           <stringProp name="HTTPSampler.protocol">${PROTOCAL}</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/test/mall-fundtrade-server/account/queryUserBaseInfo</stringProp>
+          <stringProp name="HTTPSampler.path">/app/mall-fundtrade-server/account/queryUserBaseInfo</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
